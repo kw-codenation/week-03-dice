@@ -34,6 +34,9 @@ const roll2 = document.getElementById('roll2')
 const image1 = document.getElementById('image1')
 const image2 = document.getElementById('image2')
 
+// On initial run display the home page
+HomePage()
+
 // roll of the dice for the single player game
 roll1.addEventListener('click', ()=> 
 {
@@ -60,6 +63,7 @@ roll1.addEventListener('click', ()=>
 // roll of the dice for the double player game
 roll2.addEventListener('click', ()=> 
 {
+    message.player[player.status].value = ''
     let die = Math.floor((Math.random() * 6) + 1)
     score.player[player.status].total += die
 
@@ -82,7 +86,7 @@ roll2.addEventListener('click', ()=>
 // for the double player game, will hold the score for the current player
 hold.addEventListener('click', ()=> 
 {
-    score.player[player.status].current = score.player[player.status].total
+    score.player[player.status].current += score.player[player.status].total
     display.score.player[player.status].current.value = score.player[player.status].total
     score.player[player.status].total = 0
     display.score.player[player.status].total.value = 0
@@ -95,15 +99,19 @@ hold.addEventListener('click', ()=>
     {
         player.status = 'one'
     }
+
+    score.player[player.status].total = score.player[player.status].current
+    display.score.player[player.status].current.value
     
     image2.src = './images/start.jpg'
 })
 
 // start a new game for the double player game
-newgame.addEventListener('click', Play(2))
+newgame.addEventListener('click', ()=>{Play(2)})
+
 
 // When the title is clicked the home page is displayed
-title.addEventListener('click', HomePage())
+title.addEventListener('click', ()=>{HomePage()})
 
 function HomePage()
 {
