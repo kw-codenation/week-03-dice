@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills&family=Fugaz+One&display=swap" rel="stylesheet"> 
+    <title>Dice Challenge</title>
+</head>
+<body>
+    <div id="title" class="title" align="center">dice challenge</div>
+    <table class="nav" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td align="center"><input type="button" class="nav-item" value="single player" onclick="Play(1)"></td>
+            <td align="center"><input type="button" class="nav-item" value="double player" onclick="Play(2)"></td>
+        </tr>
+    </table>
+
+    <!-- The two player page -->
+    <div id="play2" align="center">
+        <div class="play2">
+        <div class="player-title">double player game</div>
+            <div class="players">
+                <div class="player player-1">
+                    <div>player 1</div>
+                    <div><input type="text" id="display-score-player1-total" class="score score2"></div>
+                    <div align="center">
+                        <div class="current-box">
+                            <div class="current-label">Current</div>
+                            <div><input type="text" id="display-score-player1-current" class="score current-score"></div>
+                        </div>
+                    </div>
+                    <div><input id="message-player1" type="text" class="message-game2"></div>
+                </div>
+                <div class="player-mid">
+                    <div><img src="./images/plus.png" class="icons"><input id="newgame" type="button" value="new game" class="player2-buttons"></div>
+                    <div><img id="image2" class="image image2"></div>
+                    <div><img src="./images/arrows.png" class="icons"><input id="roll2" type="button" value="roll dice" class="player2-buttons"></div>
+                    <div><img src="./images/down-arrow.png" class="icons"><input id="hold" type="button" value="hold" class="player2-buttons"></div>
+                </div>
+                <div class="player player-2">
+                    <div>player 2</div>
+                    <div><input type="text" id="display-score-player2-total" class="score score2"></div>
+                    <div align="center">
+                        <div class="current-box">
+                            <div class="current-label">Current</div>
+                            <div><input type="text" id="display-score-player2-current" class="score current-score"></div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="current-box">
+                        <div class="current-label">Current</div>
+                        <div><input type="text" id="display-score-player2-current" class="score current-score"></div>
+                    </div>
+                    -->
+                    <div><input id="message-player2" type="text" class="message-game2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- The home page -->
+        <div id="home" align="center">
+            <div>Please select your game</div>
+            <div>Single Player Game</div>
+            <p>
+                Roll the dice to get a score. You win if you score<br>
+                over 20 If you roll a 1 before to pass 20 you lose
+            </p>
+            <div>Double Player game</div>
+            <p>
+                Player1 goes first and can roll the dice to get a <br>
+                score of over 20, once this has been done then <br>
+                the player has won.<br>
+                If the player rolls a 1 before they reach 20<br>
+                the player has lost. However before reaching 20 <br>
+                the player can save their score by clicking 'hold'<br>
+                Once this is done control of the game has gone to<br> 
+                player2 and will stay with this player until they <br>
+                have clicked 'hold' or has won the game
+            </p>
+        </div>
+
+    <!-- The single player page -->
+    <div id="play1" style="display:none">
+        <div align="center">
+            <div class="page-1">
+                <div class="player-title">single player game</div>
+                <div>score: <input id="display-score-single" type="text" class="score"></div>
+                <div><img id="image1" class="image"></div>
+                <div><input type="button" id="roll1" class="roll" value="roll"></div>
+                <div><input id="message-player-single" type="text" class="message"</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

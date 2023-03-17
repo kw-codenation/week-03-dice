@@ -1,0 +1,191 @@
+body
+{
+    background-image:linear-gradient(to right, orange, coral);
+    font-family:fugaz one;
+}
+.title
+{
+    font-family:stick no bills;
+    font-size:10vh;
+    text-transform: uppercase;
+    color:red;
+}
+.nav
+{
+    width:50%;
+    margin-bottom:5vw;
+}
+.nav-item
+{
+    background-color:lightsalmon;
+    border-color:darkred;
+    border-radius:1vw;
+    color:darkred;
+    width:12vw;
+    cursor:pointer;
+}
+
+.nav-item:hover
+{
+    background-color:darkred;
+    border-color:lightsalmon;
+    color:lightsalmon;
+}
+.page-1
+{
+    border:solid 2px darkred;
+    background-color:red;
+    height:50vh;
+    width:35vw;
+    margin-top:10vh;
+    text-align:center;
+}
+.image
+{
+    border-radius: 1vw;
+    height:14vh;
+    width:6vw;
+}
+.image2
+{
+    margin-top:10vh;
+    margin-bottom:10vh;
+}
+.roll
+{
+    background-color:lightsalmon;
+    border:solid 2px darkred;
+    border-radius: 0.4vw;
+    color:darkred;
+    width:5vw;
+    cursor:pointer;
+}
+.roll:hover{
+    background-color: darkred;
+    border-color:lightsalmon;
+    color:lightsalmon;
+}
+
+.player-title
+{
+    font-size:5vh;
+    margin-bottom:2vh;
+    text-transform: uppercase;
+}
+
+.play2
+{
+    background-image:linear-gradient(to right, burlywood 0%, burlywood 50%,beige 50%, beige 100%);
+    width:40%;
+    border:solid 2px white;
+    border-radius: 0.2vw;;
+}
+.players
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.player
+{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width:10vw;
+    height:50vh;
+    font-size:3.5vh;
+}
+.player-1
+{
+    text-align:center;
+}
+.player-2
+{
+    text-align:center;
+}
+
+.player2-buttons
+{
+    background-color: transparent;
+    border: none;
+    font-family:arial;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.player2-buttons:hover
+{
+    color:purple;
+}
+
+.player-mid
+{
+   font-family:arial;
+}
+
+.current-label
+{
+    text-transform:uppercase;
+    font-family:arial;
+    font-size:1.8vh;
+}
+
+.current-box
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:orangered;
+    width:4.7vw;
+    height:4.2vw;
+}
+
+.current-score
+{
+    background-color:transparent;
+}
+
+.score
+{
+    background-color: transparent;
+    border:none;
+    border:none;
+    width:2vw;
+    text-align:center;
+}
+
+.score2
+{
+    font-size:8vh;
+}
+
+.message
+{
+    background-color:transparent;
+    border:none;
+    font-family:verdana;
+    font-style: italic;
+    width:10vw;
+    text-align:center;
+    margin-top:2vh;
+}
+.message-game2
+{
+    background-color:transparent;
+    border:none;
+    width:5vw;
+}
+
+p{
+    font-family:verdana;
+    font-style: italic;
+    text-align: left;
+    margin-left:35vw;
+}
+
+
+.icons
+{
+    width:1vw;
+    height:1vw;
+}
