@@ -8,7 +8,7 @@ body
     font-family:stick no bills;
     font-size:10vh;
     text-transform: uppercase;
-    color:red;
+    color:darkred;
 }
 .nav
 {
@@ -78,7 +78,7 @@ body
     background-image:linear-gradient(to right, burlywood 0%, burlywood 50%,beige 50%, beige 100%);
     width:40%;
     border:solid 2px white;
-    border-radius: 0.2vw;;
+    border-radius: 0.2vw;
 }
 .players
 {
@@ -150,7 +150,7 @@ body
     background-color: transparent;
     border:none;
     border:none;
-    width:2vw;
+    width:4vw;
     text-align:center;
 }
 
